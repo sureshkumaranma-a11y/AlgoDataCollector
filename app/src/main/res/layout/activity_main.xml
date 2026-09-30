@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Algo Data Collector" android:textSize="24sp" android:textStyle="bold"
+            android:paddingBottom="12dp"/>
+        <TextView android:id="@+id/timeText" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Time: --" android:paddingBottom="12dp"/>
+        <EditText android:id="@+id/instrument" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Instrument (NIFTY / SENSEX / Option)"/>
+        <EditText android:id="@+id/timeframe" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Timeframe (1m / 5m / 1h)"/>
+        <EditText android:id="@+id/open" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Open" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/high" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="High" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/low" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Low" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/close" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Close" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/volume" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Volume" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/premium" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Option Premium" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/velocity" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Velocity" android:inputType="numberDecimal|numberSigned"/>
+        <EditText android:id="@+id/acceleration" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Acceleration" android:inputType="numberDecimal|numberSigned"/>
+        <EditText android:id="@+id/notes" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Notes / pattern" android:minLines="3"
+            android:gravity="top"/>
+        <Button android:id="@+id/saveButton" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Save Record" android:layout_marginTop="12dp"/>
+        <Button android:id="@+id/exportButton" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Export CSV" android:layout_marginTop="8dp"/>
+        <TextView android:id="@+id/status" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="No records saved." android:paddingTop="12dp"/>
+    </LinearLayout>
+</ScrollView>
